@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tutorials.trainingsceenbuilder_11.HelloController">
+   <children>
+      <MediaView fx:id="myMediaView" fitHeight="300.0" fitWidth="500.0" />
+      <Button fx:id="playButton" layoutX="111.0" layoutY="310.0" mnemonicParsing="false" onAction="#playMedia" text="PLAY" />
+      <Button fx:id="pauseButton" layoutX="165.0" layoutY="310.0" mnemonicParsing="false" onAction="#pauseMedia" text="PAUSE" />
+      <Button fx:id="resetButton" layoutX="336.0" layoutY="310.0" mnemonicParsing="false" onAction="#resetMedia" text="RESET" />
+      <Button fx:id="muteButton" layoutX="278.0" layoutY="310.0" mnemonicParsing="false" onAction="#muteMedia" text="MUTE" />
+      <Button fx:id="returnButton" layoutX="59.0" layoutY="310.0" mnemonicParsing="false" onAction="#returnMedia" text="&lt;&lt;&lt;" />
+      <Button fx:id="increaseButton" layoutX="226.0" layoutY="310.0" mnemonicParsing="false" onAction="#increaseMedia" text="&gt;&gt;&gt;" />
+      <Button fx:id="volUpButton" layoutX="253.0" layoutY="343.0" mnemonicParsing="false" onAction="#volumeUp" text="VOL +" />
+      <Button fx:id="volDownButton" layoutX="313.0" layoutY="343.0" mnemonicParsing="false" onAction="#volumeDown" text="VOL -" />
+      <Slider fx:id="volumeSlider" layoutX="243.0" layoutY="379.0" max="1.0" value="1.0" />
+   </children>
+</AnchorPane>
